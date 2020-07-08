@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #b6b6b6;
+}
+a{
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover{
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+header{
+    background-color: #0f0f0f;
+}
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 3.4fr 1fr;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+ul{
+    display: flex;
+    align-self: center;
+    justify-self: end;
+}
+ul li{
+    list-style: none;
+    margin-right:20px;
+}
+
+.heading{
+    font-family: 'Merienda One',sans-serif;
+    align-self: center;
+    color: orangered;
+}
+
+.search-box{
+    align-self: center;
+    justify-self: end;
+    display: flex;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.search-text{
+    background: none;
+    border: none;
+    outline: none;
+    width: 0;
+    opacity: 0;
+    transition: 0.7s;
+    padding:4px;
+    float: left;
+    color: white;
+}
+
+.search-btn{
+    transition: 0.7s;
+    float: right;
+    color: orangered;
+}
+.search-box:hover{
+    border: 2px solid grey;
+    border-radius: 40px;
+}
+.search-box:hover > .search-text{
+    width: 150px;
+    opacity: 1;
+}
+
+.search-box:hover > .search-btn{
+    transform: rotate(360deg);
+}
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: end;
+    cursor: pointer;
+}
+.line{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        grid-template-columns: 9fr 1fr 1.5fr;
+    }
+    ul{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        align-items: center;
+        background-color: #0f0f0f;
+        width: 40vw;
+        z-index: -1;
+        transform: translateX(100%);
+        opacity: 0;
+        transition: 0.7s;
+    }
+    .line{
+        width:30px;
+        height:5px;
+        border-radius:10px ;
+        background-color:orangered;
+        display: inline-block;
+        margin-bottom: 3px;
+    }
+    .sidebar{
+        transform: translateX(0);
+        opacity: 1;
+        transition: 0.7s;
+    }
+    .sidebar li{
+        
+    }
+}
