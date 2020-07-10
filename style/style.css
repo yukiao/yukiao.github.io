@@ -189,7 +189,8 @@ main{
         height: 100vh;
         justify-content: space-evenly;
         display: flex;
-        flex-directtransform: translateY(0%);ion: column;
+        flex-direction: column;
+        transform: translateY(0%);
         right: 0;
         align-items: center;
         background-color: #0f0f0f;
