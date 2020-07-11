@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat&display=swap');
-
+html{
+    min-height: 100%;
+}
 body{
     padding:0;
     margin:0;
     font-family: 'Montserrat', sans-serif;
     background-color: #b6b6b6;
+    position: relative;
+    height: 100%;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 a{
     text-decoration: none;
@@ -118,9 +127,19 @@ ul li{
 }
 
 main{
-    height:1000px;
+    background-color: white;
+    width: 80vw;
+    margin:0 auto;
+    min-height: 100%;
+    margin-bottom: -90px;
+    flex: 1;
 }
 
+.content{
+    width: 90%;
+    margin: auto;
+    padding-top: 90px;
+}
 .searched-content{
     background-color: black;
     height: 100vh;
@@ -179,7 +198,9 @@ main{
     font-size: 2em;
     cursor: pointer;
 }
-
+.push{
+    height: 90px;
+}
 footer{
     height: 90px;
     background-color: #0f0f0f;
@@ -230,6 +251,9 @@ footer{
 @media only screen and (max-width: 768px){
     a{
         font-size: 14px;
+    }
+    main{
+        width: 100%;
     }
 }
 
