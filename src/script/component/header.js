@@ -135,7 +135,6 @@ class Header extends HTMLElement{
                     transition: .5s;
                     height:80vh;
                     border-bottom-left-radius: 10px;
-                    border: 3px solid rgb(0,89,255);
                 }
                 .search-text-side{
                     margin-right: 15px;
