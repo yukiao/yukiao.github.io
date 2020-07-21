@@ -1,11 +1,9 @@
 const path = require('path');
 module.exports = {
-    mode: 'development',
-    devtool: 'source-map',
     entry: './src/script/entry.js',
     output:{
         path: path.resolve(__dirname,'dist'),
-    filename: 'bundle.js'
+        filename:'bundle.js'
     },
     module:{
         rules:[
@@ -19,7 +17,12 @@ module.exports = {
             {
                 test: /\.(svg|eot|woff|woff2|ttf)$/,
                 use: ['file-loader']
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use:['babel-loader']
             }
         ]
     }
-};
+}

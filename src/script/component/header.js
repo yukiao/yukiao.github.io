@@ -3,13 +3,10 @@ class Header extends HTMLElement{
         super();
         this.shadowDOM  = this.attachShadow({mode:'open'});
     }
-    disconnectedCallback(){
-        this.shadowDOM.removeEventListener();
-    }
     connectedCallback(){
         this.shadowDOM.innerHTML = `
-        <link rel="stylesheet" href="src/style/css/all.css">
-        <link rel="stylesheet" href="src/style/style.css">
+        <link rel="stylesheet" href="/src/style/style.css">
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
         <style>
             header{
                 display: flex;
