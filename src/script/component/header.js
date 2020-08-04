@@ -6,7 +6,7 @@ class Header extends HTMLElement{
     connectedCallback(){
         this.shadowDOM.innerHTML = `
         <link rel="stylesheet" href="/src/style/style.css">
-        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <link rel="stylesheet" href="/src/style/font-awesome-4.7.0/css/font-awesome.min.css">
         <style>
             header{
                 display: flex;
@@ -178,7 +178,7 @@ class Header extends HTMLElement{
             <div class="search-box">
                 <input type="text" class="search-text" placeholder="Search image ...">
                 <a class="search-btn" href="#">
-                <i class="fas fa-search original"></i>
+                <i class="fa fa-search original"></i>
                 </a>
             </div>
             <div class="hamburger">
@@ -191,7 +191,7 @@ class Header extends HTMLElement{
             <li>
                 <input type="text" class="search-text-side" placeholder="Search image ...">
                 <a class="search-btn-side" href="#">
-                    <i class="fas fa-search side"></i>
+                    <i class="fa fa-search side"></i>
                 </a>
             </li>
             <div class="separator"></div>
