@@ -22,6 +22,11 @@ class Footer extends HTMLElement{
                     color: rgb(0,89,255);
                     font-weight:bolder;
                 }
+                @media only screen and (max-width: 576px){
+                    footer p{
+                        font-size: 0.9em;
+                    }
+                }
             </style>
             <footer>
                 <p>Copyright &copy; 2020 Yukiao. All Rights Reserved</p>
