@@ -132,6 +132,7 @@ class Header extends HTMLElement{
                     height:90vh;
                     border-bottom-left-radius: 10px;
                     z-index: 1;
+                    overflow-y: auto;
                 }
                 .search-text-side{
                     margin-right: 15px;
