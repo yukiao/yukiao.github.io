@@ -9,24 +9,24 @@ header.addEventListener('click',function(e){
     }
 })
 
-function getPlayer(){
-    return fetch('/src/data/Player.json')
+function getPosts(){
+    return fetch('/src/data/Posts.json')
         .then(response => response.json())
-        .then(response =>response);   
+        .then(response => response);   
 }
 
 async function generateResult(keyword){
-    const players = await getPlayer();
+    const posts = await getPosts();
     let output = "";
 
-    players.forEach(player => {
-        const name = player.name;
+    posts.forEach(post => {
+        const name = post.title;
         if(name.toLowerCase().includes(keyword)){
             output += `
-            <div class="card">
-                <img src="${player.avatar}" alt="avatar">
-                <h3>${player.name}</h3>
-                <button type="button" name="${player.name}" class="btn btn-primary btn-sm show-detail" name style="width:40%;margin-bottom:1rem">Detail</button>
+            <div class="post">
+                <img src="${post.img}" alt="image">
+                <p class="image-title">${post.title}</p>
+                <a class="view" href="${post.link}">View</a>
             </div>
             `
         }

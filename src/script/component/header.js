@@ -18,7 +18,7 @@ class Header extends HTMLElement{
                 position: fixed;
                 left:0;
                 right:0;
-                z-index:2
+                z-index:2;
                 height:10vh;
                 box-sizing: border-box;
             }
@@ -118,20 +118,20 @@ class Header extends HTMLElement{
                     display: flex;
                     flex-direction: column;
                     position: fixed;
-                    background-color: #222222;
+                    background-color: #202020;
                     right: 0;
                     left:0;
                     top: 10vh;
-                    bottom: 10vh;
-                    z-index: 0;
+                    bottom: 0;
                     justify-content: space-evenly;
                     align-items: center;
                     width: 100vw;
                     transform: translateX(100%);
                     opacity: 0;
                     transition: .5s;
-                    height:80vh;
+                    height:90vh;
                     border-bottom-left-radius: 10px;
+                    z-index: 1;
                 }
                 .search-text-side{
                     margin-right: 15px;
@@ -170,8 +170,8 @@ class Header extends HTMLElement{
                 <h1>Yukiao</h1>
             </div>
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
             </ul>
@@ -195,9 +195,9 @@ class Header extends HTMLElement{
                 </a>
             </li>
             <div class="separator"></div>
-            <li><a href="#">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <div class="separator"></div>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
             <div class="separator"></div>
             <li><a href="#">Contact</a></li>
             <div class="separator"></div>

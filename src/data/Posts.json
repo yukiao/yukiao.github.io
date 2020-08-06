@@ -1,10 +1,8 @@
 [
     {
-        "title" : "Wolf and Girl",
-        "date" : "2020-07-15",
-        "img" : "/src/assets/img/.....",
-        "credits" : [
-            
-        ]
+        "title" : "Unwanted",
+        "date" : "2020-08-05",
+        "img" : "/src/assets/img/unwanted.jpg",
+        "link" : "/posts/unwanted.html"
     }
 ]
